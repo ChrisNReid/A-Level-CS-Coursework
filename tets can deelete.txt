@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<!--HTML and CSS template-->
+
+<head>
+<style> /*CSS Style definitions start here*/
+#container /*Styles for Container*/
+{
+	width:100%;
+	margin: 0 auto; /*Centres the main container*/
+	max-width: 800px;
+	border:1px solid gray;
+	background-color: #3FB0FF;
+}
+
+#header /*Styles for Header*/
+{
+	padding: 15px;
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+      	font-size: 16px;
+	background-color: #003961;
+}
+
+#banner 
+{
+	padding:0;
+	margin:0;
+}
+
+#navbar
+{
+	float:left; /*Moves the container to the left*/
+	width:160px;
+	margin:0;
+	padding:15px;
+        font-family: sans-serif;
+
+}
+
+#content /*Styles for Main Content area*/
+{
+	margin-left:190px;
+	padding:10px;
+	font-family: Arial, Verdana, sans-serif;
+      	font-size: 16px;
+	background-color: #ffffff;
+}
+
+/*Styles for links*/
+a:link    {color: #003961;}
+a:visited {color: #003961;}
+a:hover   {color: #ffffff;}
+a:active  {color: #33ccff;}
+
+</style>
+</head>
+
+
+<body> <!--Main site content begins here-->
+<div id="container"> <!--Page container-->
+
+<div id="header"> <!--Main header-->
+  <h1 id="banner">Travel the Americas</h1>
+</div>
+
+<div id="navbar"> <!--Navigation bar-->
+  <p>
+  <nav>
+  <a href="Home.html">Home</a> <br>
+  <a href="About.html">About us</a><br>
+  <a href="Contact.html">Contact us</a><br>
+  <a href="Form.html">Register your details</a>
+  </nav>
+  </p>
+</div>
+
+<div id="content"> <!--Main content-->
+  <h2>A guide to travel across North or South America</h2>
+  <hr> <!--Creates a horizontal rule-->
+  <p><em><strong>By Road, by Rail or by Air?</strong></em></p>
+  <img src="canyon.jpg" style=float:right;>
+  <p>It takes about six days driving to get across the US if you only stop in the evenings. South American roads are less well maintained and distances will take much longer.</p> <!--Empty paragraphs-->
+  <p>The train allows you to meet new people and travel while you sleep.</p>
+  <p>Flying is the fastest way, but you won't see much from 35,000ft.</p>
+</div>
+
+</div> <!--Closing container div-->
+
+</body>
+</html>

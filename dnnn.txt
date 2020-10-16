@@ -1,0 +1,99 @@
+/**
+ * 
+ */
+package org.com1027.question4optional;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.com1027.question3.Room;
+import org.com1027.question3.TenantType;
+import org.com1027.question3.iTenant;
+
+/**
+ * @author Chris
+ *
+ */
+public class PropertyManagement {
+	private Agency estateAgency = null;
+	private ArrayList<House> properties = new ArrayList<House>();
+	private Map<String, Integer> graph = new HashMap<String, Integer>();
+	
+	
+	public PropertyManagement(Agency estateAgency) {
+		super();
+		this.estateAgency = estateAgency;
+		}
+	
+		public void addProperty(Property house) {
+		this.properties.add((House) house);
+		}
+		public void addTenant(Property house1, Room room, Tenant tenant) {
+			house1.occupyRoom(room, tenant);
+		}
+		public String displayProperties() {
+			String addspace = "";
+			for(House house: properties) {
+				addspace += house.toString() + "\n";
+			}
+			return addspace;
+		}
+	
+		public String getEstateAgency() {
+			return this.estateAgency.toString();
+		
+		}
+	
+		public void removeProperty(Property house1) {
+			if (this.properties.contains(house1)) {
+				properties.remove(house1);
+			}
+			else {
+				throw new IllegalArgumentException("This house doesn't exist");
+			}
+		}
+public String infoGraphics() {
+			
+			this.graph.put("0-16", 0);
+			this.graph.put("17-25", 0);
+			this.graph.put("26-35", 0);
+			this.graph.put("36-49", 0);
+			this.graph.put("50-60", 0);
+			this.graph.put("60+", 0);
+			
+			public String infoGraphics() {
+				
+				this.graph.put("0-16", 0);
+				this.graph.put("17-25", 0);
+				this.graph.put("26-35", 0);
+				this.graph.put("36-49", 0);
+				this.graph.put("50-60", 0);
+				this.graph.put("60+", 0);
+				
+				for (Property i : this.properties) {
+					for (iTenant j : i.rooms.values()) {
+						int amount = 0;
+						if(j.getAge() <= 16) {
+							amount = this.graph.get("0-16") + 1;
+						}
+						else if(j.getType() == TenantType.STUDENT) {
+							studCount++;
+						}
+						else {
+							throw new IllegalArgumentException("invalid");
+						}
+					}
+					if(studCount > 0 && profCount == 0) {
+						add += i.toString() + "\n";				}
+				}
+				return add;
+
+			}
+		
+				
+}
+
+		
+				
